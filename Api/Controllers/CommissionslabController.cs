@@ -21,8 +21,7 @@ namespace Api.Controllers
             List<Api.OTP.Commissionslab> values = objW.mLoadCommissionSlab("0004").ToList();
             return Json(values);
         }
-        //ddfdf
-        //ddfdf
+        //ddddddd
         //// GET api/commissionslab/5
         //public string Get(int id)
         //{
