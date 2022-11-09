@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.1.83:107/API/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/D.API.Model" />
+  <xs:element name="ReadDouments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadDoumentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReadDoumentsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mUpdateCustomerOnlineStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strmerZeName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mUpdateCustomerOnlineStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mUpdateCustomerOnlineStatusResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mobileSMSVerify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMobileNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strOTP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSIMSL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mobileSMSVerifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mobileSMSVerifyResult" nillable="true" type="q1:AppsVercifysumm" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mobileSMSAPI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMobileNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mobileSMSAPIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mobileSMSAPIResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisplayApiChangeOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisplayApiChangeOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="DisplayApiChangeOrderResult" nillable="true" type="q2:summaryNew" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetActive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetActiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mGetActiveResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadMpoDivisionNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDivision" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadMpoDivisionNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadMpoDivisionNewResult" nillable="true" type="q3:ArrayOfMpoArea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mUpdateNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDG" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mUpdateNotificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mUpdateNotificationResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetAppsNotifucation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="utype" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetAppsNotifucationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mGetAppsNotifucationResult" nillable="true" type="q4:ArrayOfnotification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAPISalesOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSummary" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAPISalesOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAPISalesOrderResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisplayApiOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intAppSync" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisplayApiOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="DisplayApiOrderResult" nillable="true" type="q5:summaryNew" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAPISalesOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSummary" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDetails" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAPISalesOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveAPISalesOrderResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetOTPNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMobileNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTokenNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetOTPNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mGetOTPNoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadStockGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadStockGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadStockGroupResult" nillable="true" type="q6:ArrayOfStockgroup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetStockItemFromGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strGroupName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strBranchID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mGetStockItemFromGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mGetStockItemFromGroupResult" nillable="true" type="q7:ArrayOfStockItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gstrGetMpoAreaDevisionList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassWord" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gstrGetMpoAreaDevisionListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="gstrGetMpoAreaDevisionListResult" nillable="true" type="q8:MPO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadCustomerName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadCustomerNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadCustomerNameResult" nillable="true" type="q9:ArrayOfCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadItemRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strItemName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadItemRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadItemRateResult" nillable="true" type="q10:ArrayOfStockitemRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadCommissionSlab">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadCommissionSlabResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadCommissionSlabResult" nillable="true" type="q11:ArrayOfCommissionslab" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadMpoArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDisvion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadMpoAreaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadMpoAreaResult" nillable="true" type="q12:ArrayOfMpoArea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadMpoDivisoin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeComID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strArea" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mLoadMpoDivisoinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/D.API.Model" minOccurs="0" name="mLoadMpoDivisoinResult" nillable="true" type="q13:ArrayOfDivision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SWAPI" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.83:107/API/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.83:107/API/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.1.83:107/API/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/D.API.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISWAPI_ReadDouments_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDouments" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_ReadDouments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDoumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mUpdateCustomerOnlineStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:mUpdateCustomerOnlineStatus" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mUpdateCustomerOnlineStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mUpdateCustomerOnlineStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mobileSMSVerify_InputMessage">
+    <wsdl:part name="parameters" element="tns:mobileSMSVerify" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mobileSMSVerify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mobileSMSVerifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mobileSMSAPI_InputMessage">
+    <wsdl:part name="parameters" element="tns:mobileSMSAPI" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mobileSMSAPI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mobileSMSAPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_DisplayApiChangeOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayApiChangeOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_DisplayApiChangeOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayApiChangeOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetActive_InputMessage">
+    <wsdl:part name="parameters" element="tns:mGetActive" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetActive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mGetActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadMpoDivisionNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadMpoDivisionNew" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadMpoDivisionNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadMpoDivisionNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mUpdateNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:mUpdateNotification" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mUpdateNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mUpdateNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetAppsNotifucation_InputMessage">
+    <wsdl:part name="parameters" element="tns:mGetAppsNotifucation" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetAppsNotifucation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mGetAppsNotifucationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_UpdateAPISalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAPISalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_UpdateAPISalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAPISalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_DisplayApiOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayApiOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_DisplayApiOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayApiOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_SaveAPISalesOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAPISalesOrder" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_SaveAPISalesOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAPISalesOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetOTPNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:mGetOTPNo" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetOTPNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mGetOTPNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadStockGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadStockGroup" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadStockGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadStockGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetStockItemFromGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:mGetStockItemFromGroup" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mGetStockItemFromGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mGetStockItemFromGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_gstrGetMpoAreaDevisionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:gstrGetMpoAreaDevisionList" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_gstrGetMpoAreaDevisionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:gstrGetMpoAreaDevisionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadCustomerName_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadCustomerName" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadCustomerName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadCustomerNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadItemRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadItemRate" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadItemRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadItemRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadCommissionSlab_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadCommissionSlab" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadCommissionSlab_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadCommissionSlabResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadMpoArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadMpoArea" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadMpoArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadMpoAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadMpoDivisoin_InputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadMpoDivisoin" />
+  </wsdl:message>
+  <wsdl:message name="ISWAPI_mLoadMpoDivisoin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:mLoadMpoDivisoinResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISWAPI">
+    <wsdl:operation name="ReadDouments">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/ReadDouments" message="tns:ISWAPI_ReadDouments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/ReadDoumentsResponse" message="tns:ISWAPI_ReadDouments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mUpdateCustomerOnlineStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mUpdateCustomerOnlineStatus" message="tns:ISWAPI_mUpdateCustomerOnlineStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mUpdateCustomerOnlineStatusResponse" message="tns:ISWAPI_mUpdateCustomerOnlineStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mobileSMSVerify">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mobileSMSVerify" message="tns:ISWAPI_mobileSMSVerify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mobileSMSVerifyResponse" message="tns:ISWAPI_mobileSMSVerify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mobileSMSAPI">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mobileSMSAPI" message="tns:ISWAPI_mobileSMSAPI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mobileSMSAPIResponse" message="tns:ISWAPI_mobileSMSAPI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayApiChangeOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/DisplayApiChangeOrder" message="tns:ISWAPI_DisplayApiChangeOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/DisplayApiChangeOrderResponse" message="tns:ISWAPI_DisplayApiChangeOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mGetActive">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mGetActive" message="tns:ISWAPI_mGetActive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mGetActiveResponse" message="tns:ISWAPI_mGetActive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadMpoDivisionNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadMpoDivisionNew" message="tns:ISWAPI_mLoadMpoDivisionNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadMpoDivisionNewResponse" message="tns:ISWAPI_mLoadMpoDivisionNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mUpdateNotification">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mUpdateNotification" message="tns:ISWAPI_mUpdateNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mUpdateNotificationResponse" message="tns:ISWAPI_mUpdateNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mGetAppsNotifucation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mGetAppsNotifucation" message="tns:ISWAPI_mGetAppsNotifucation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mGetAppsNotifucationResponse" message="tns:ISWAPI_mGetAppsNotifucation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAPISalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/UpdateAPISalesOrder" message="tns:ISWAPI_UpdateAPISalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/UpdateAPISalesOrderResponse" message="tns:ISWAPI_UpdateAPISalesOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayApiOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/DisplayApiOrder" message="tns:ISWAPI_DisplayApiOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/DisplayApiOrderResponse" message="tns:ISWAPI_DisplayApiOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAPISalesOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/SaveAPISalesOrder" message="tns:ISWAPI_SaveAPISalesOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/SaveAPISalesOrderResponse" message="tns:ISWAPI_SaveAPISalesOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mGetOTPNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mGetOTPNo" message="tns:ISWAPI_mGetOTPNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mGetOTPNoResponse" message="tns:ISWAPI_mGetOTPNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadStockGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadStockGroup" message="tns:ISWAPI_mLoadStockGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadStockGroupResponse" message="tns:ISWAPI_mLoadStockGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mGetStockItemFromGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mGetStockItemFromGroup" message="tns:ISWAPI_mGetStockItemFromGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mGetStockItemFromGroupResponse" message="tns:ISWAPI_mGetStockItemFromGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="gstrGetMpoAreaDevisionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/gstrGetMpoAreaDevisionList" message="tns:ISWAPI_gstrGetMpoAreaDevisionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/gstrGetMpoAreaDevisionListResponse" message="tns:ISWAPI_gstrGetMpoAreaDevisionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadCustomerName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadCustomerName" message="tns:ISWAPI_mLoadCustomerName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadCustomerNameResponse" message="tns:ISWAPI_mLoadCustomerName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadItemRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadItemRate" message="tns:ISWAPI_mLoadItemRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadItemRateResponse" message="tns:ISWAPI_mLoadItemRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadCommissionSlab">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadCommissionSlab" message="tns:ISWAPI_mLoadCommissionSlab_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadCommissionSlabResponse" message="tns:ISWAPI_mLoadCommissionSlab_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadMpoArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadMpoArea" message="tns:ISWAPI_mLoadMpoArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadMpoAreaResponse" message="tns:ISWAPI_mLoadMpoArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mLoadMpoDivisoin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWAPI/mLoadMpoDivisoin" message="tns:ISWAPI_mLoadMpoDivisoin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWAPI/mLoadMpoDivisoinResponse" message="tns:ISWAPI_mLoadMpoDivisoin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISWAPI" type="tns:ISWAPI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadDouments">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/ReadDouments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mUpdateCustomerOnlineStatus">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mUpdateCustomerOnlineStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mobileSMSVerify">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mobileSMSVerify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mobileSMSAPI">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mobileSMSAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayApiChangeOrder">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/DisplayApiChangeOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mGetActive">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mGetActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadMpoDivisionNew">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadMpoDivisionNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mUpdateNotification">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mUpdateNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mGetAppsNotifucation">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mGetAppsNotifucation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAPISalesOrder">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/UpdateAPISalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayApiOrder">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/DisplayApiOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAPISalesOrder">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/SaveAPISalesOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mGetOTPNo">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mGetOTPNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadStockGroup">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadStockGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mGetStockItemFromGroup">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mGetStockItemFromGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gstrGetMpoAreaDevisionList">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/gstrGetMpoAreaDevisionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadCustomerName">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadCustomerName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadItemRate">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadItemRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadCommissionSlab">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadCommissionSlab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadMpoArea">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadMpoArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mLoadMpoDivisoin">
+      <soap:operation soapAction="http://tempuri.org/ISWAPI/mLoadMpoDivisoin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SWAPI">
+    <wsdl:port name="BasicHttpBinding_ISWAPI" binding="tns:BasicHttpBinding_ISWAPI">
+      <soap:address location="http://192.168.1.83:107/API/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

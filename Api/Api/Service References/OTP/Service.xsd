@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/D.API.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/D.API.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="AppsVercifysumm">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="summary" nillable="true" type="tns:ArrayOfAppsVercify" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppsVercifysumm" nillable="true" type="tns:AppsVercifysumm" />
+  <xs:complexType name="ArrayOfAppsVercify">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AppsVercify" nillable="true" type="tns:AppsVercify" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAppsVercify" nillable="true" type="tns:ArrayOfAppsVercify" />
+  <xs:complexType name="AppsVercify">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="intResult" type="xs:int" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppsVercify" nillable="true" type="tns:AppsVercify" />
+  <xs:complexType name="summaryNew">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="details" nillable="true" type="tns:ArrayOfdetails" />
+      <xs:element minOccurs="0" name="summary" nillable="true" type="tns:ArrayOfsummary1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="summaryNew" nillable="true" type="tns:summaryNew" />
+  <xs:complexType name="ArrayOfdetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="details" nillable="true" type="tns:details" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfdetails" nillable="true" type="tns:ArrayOfdetails" />
+  <xs:complexType name="details">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="doctorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="groupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itemPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="itemQuentity" type="xs:double" />
+      <xs:element minOccurs="0" name="itemTotalPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="mpo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="orderid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="slabgroupName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="details" nillable="true" type="tns:details" />
+  <xs:complexType name="ArrayOfsummary1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="summary1" nillable="true" type="tns:summary1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfsummary1" nillable="true" type="tns:ArrayOfsummary1" />
+  <xs:complexType name="summary1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="approveBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="approveDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="doctor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="mpo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="newCustomer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reciveAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="totalAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="totlaQty" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="summary1" nillable="true" type="tns:summary1" />
+  <xs:complexType name="ArrayOfMpoArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MpoArea" nillable="true" type="tns:MpoArea" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMpoArea" nillable="true" type="tns:ArrayOfMpoArea" />
+  <xs:complexType name="MpoArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strMpoName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strTC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strTName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MpoArea" nillable="true" type="tns:MpoArea" />
+  <xs:complexType name="ArrayOfnotification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="notification" nillable="true" type="tns:notification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfnotification" nillable="true" type="tns:ArrayOfnotification" />
+  <xs:complexType name="notification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dblNetAmnt" type="xs:double" />
+      <xs:element minOccurs="0" name="orderid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="teritorrycode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="notification" nillable="true" type="tns:notification" />
+  <xs:complexType name="ArrayOfStockgroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Stockgroup" nillable="true" type="tns:Stockgroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockgroup" nillable="true" type="tns:ArrayOfStockgroup" />
+  <xs:complexType name="Stockgroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Stockgroup" nillable="true" type="tns:Stockgroup" />
+  <xs:complexType name="ArrayOfStockItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockItem" nillable="true" type="tns:StockItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockItem" nillable="true" type="tns:ArrayOfStockItem" />
+  <xs:complexType name="StockItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dblClsBalance" type="xs:double" />
+      <xs:element minOccurs="0" name="strItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUnit" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockItem" nillable="true" type="tns:StockItem" />
+  <xs:complexType name="MPO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="intMpoType" type="xs:int" />
+      <xs:element minOccurs="0" name="lngUniqueNo" type="xs:long" />
+      <xs:element minOccurs="0" name="strLedgerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strMobileNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strResponse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strSecurityCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strTeritorryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strTeritorryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUserPassword" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MPO" nillable="true" type="tns:MPO" />
+  <xs:complexType name="ArrayOfCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomer" nillable="true" type="tns:ArrayOfCustomer" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strCustomerName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="tns:Customer" />
+  <xs:complexType name="ArrayOfStockitemRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockitemRate" nillable="true" type="tns:StockitemRate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockitemRate" nillable="true" type="tns:ArrayOfStockitemRate" />
+  <xs:complexType name="StockitemRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="commgroupgame" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dblRate" type="xs:double" />
+      <xs:element minOccurs="0" name="groupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itemcode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockitemRate" nillable="true" type="tns:StockitemRate" />
+  <xs:complexType name="ArrayOfCommissionslab">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Commissionslab" nillable="true" type="tns:Commissionslab" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCommissionslab" nillable="true" type="tns:ArrayOfCommissionslab" />
+  <xs:complexType name="Commissionslab">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dblFromRange" type="xs:double" />
+      <xs:element minOccurs="0" name="dblPercentage" type="xs:double" />
+      <xs:element minOccurs="0" name="dblToRange" type="xs:double" />
+      <xs:element minOccurs="0" name="groupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Commissionslab" nillable="true" type="tns:Commissionslab" />
+  <xs:complexType name="ArrayOfDivision">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Division" nillable="true" type="tns:Division" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDivision" nillable="true" type="tns:ArrayOfDivision" />
+  <xs:complexType name="Division">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strDivision" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Division" nillable="true" type="tns:Division" />
+</xs:schema>

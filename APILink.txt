@@ -1,0 +1,118 @@
+https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=en
+
+Realip
+182.160.117.164
+182.160.126.21
+http://182.160.126.21:8082/api/GetNotification/Post
+
+http://192.168.1.83:8080/api/StockGroup
+http://192.168.1.83:8080/api/OTPVerification/Post
+{
+	"Mobile": "01700712317",
+	"Token":"4545sdf54sdf54e54we4s5d4fwe8r5wf"	
+
+}
+http://192.168.1.83:8080/api/StockItem/Bio-Chemic
+http://192.168.1.83:8080/api/GetCustomer/305
+http://192.168.1.83:8080/api/GetMPOName/305
+http://192.168.1.83:8080/api/Commissionslab
+http://192.168.1.83:8080/api/mLoadItemRate
+http://192.168.1.83:8080/api/mLoadItemRate/Abies Nig - 100ml
+
+http://192.168.1.83:8080/api/GetMPOName/337
+http://192.168.1.83:8080/api/MPO/post?UserID=355530&Password=103 --Postman
+http://192.168.1.83:8080/api/MPOArea/80
+
+http://192.168.1.83:8080/api/MPODivision/80
+
+http://192.168.1.83:8080/api/SalesOrderInsert/Save
+http://192.168.1.83:8080/api/DisplaySalesOrder/Post
+
+http://192.168.0.10:8080//api/ApprovedSalesOrder/Approved/
+http://192.168.1.83:8080/api/GetDivision/366
+
+http://192.168.1.83:8080/api/CheckStatus/Post
+http://192.168.1.83:8080/api/NotificationUpdate/Post
+
+http://192.168.1.83:8080/api/GetNotification/Post
+
+http://192.168.1.83:8080//api/ChangeSalesOrder/Post
+http://www.barcode-generator.org/
+
+http://192.168.1.83:8080/api/smsapi/Post
+http://192.168.1.83:8080/api/smsapiverify/Post
+
+Postman
+http://localhost:9033/api/MPO/post?UserID=330&Password=103
+http://localhost:9033/api/MPO/post
+{
+	
+	"id1":"1",
+	"id2":"2",
+	"id3":"3",
+	
+	"MyList":[
+		{
+			"Name":"AAAAAA",
+			"MobileNo":"0145"
+		},
+			{
+			"Name":"BBBBBB",
+			"MobileNo":"26584"
+		}
+		]
+}
+
+//*************iNSERT
+[
+    {
+        "approveBy": "",
+        "approveDate": "",
+        "date": "11/16/2019 12:00:00 AM",
+        "doctor": "CP-4588-DEEPLAID HOMOEO HALL-DR. DULAL MIAH",
+        "id": null,
+        "isSelected": false,
+        "mpo": "305",
+        "orderId": "1573926583000",
+        "status": 0,
+        "strDetails": {
+            "date": "16-11-2019",
+            "doctorName": null,
+            "groupName": "Blank Tab",
+            "itemName": "Blank Tab - 100mg (450gm)",
+            "itemPrice": 380,
+            "itemQuentity": 3,
+            "itemTotalPrice": 0,
+            "mpo": null,
+            "orderid": "1573926583000",
+            "slabgroupName": null
+        },
+        "totalAmount": 798,
+        "totlaQty": 0
+    },
+    {
+        "approveBy": "",
+        "approveDate": "",
+        "date": "11/16/2019 12:00:00 AM",
+        "doctor": "CP-4588-DEEPLAID HOMOEO HALL-DR. DULAL MIAH",
+        "id": null,
+        "isSelected": false,
+        "mpo": "305",
+        "orderId": "1573926583001",
+        "status": 0,
+        "strDetails": {
+            "date": "16-11-2019",
+            "doctorName": null,
+            "groupName": "Blank Tab",
+            "itemName": "Blank Tab - 100mg (450gm)",
+            "itemPrice": 380,
+            "itemQuentity": 3,
+            "itemTotalPrice": 0,
+            "mpo": null,
+            "orderid": "1573926583001",
+            "slabgroupName": null
+        },
+        "totalAmount": 798,
+        "totlaQty": 0
+    }
+]
